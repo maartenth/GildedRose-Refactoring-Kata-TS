@@ -5,7 +5,7 @@ describe("Gilded Rose", function () {
   it("should update sellIn", function () {
     const gildedRose = new GildedRose([
       new Item("Ancient Qiraji Ripper", 10, 20),
-      new Item("Jack the Ripper", 12, 18),
+      new Item("Elixir of the Mongoose", 12, 18),
     ]);
     const items = gildedRose.updateQuality();
     expect(items[0].sellIn).to.equal(9);
@@ -15,7 +15,7 @@ describe("Gilded Rose", function () {
   it("should correctly update quality of normal items", function () {
     const gildedRose = new GildedRose([
       new Item("Ancient Qiraji Ripper", 10, 20),
-      new Item("Jack the Ripper", 12, 18),
+      new Item("Elixir of the Mongoose", 12, 18),
     ]);
     const items = gildedRose.updateQuality();
     expect(items[0].quality).to.equal(19);
